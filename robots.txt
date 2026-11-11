@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://whitekidtechzw.netlify.app/sitemap.xml

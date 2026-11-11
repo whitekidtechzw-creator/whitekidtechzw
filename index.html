@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WHITEKID TECH — Building Ideas. Writing Code. Creating a Legacy.</title>
+<meta name="description" content="Official portfolio of WhiteKid Tech, a developer from Zimbabwe — bots, automation and digital projects.">
+<meta property="og:title" content="WHITEKID TECH — The Mind Behind the Code">
+<meta property="og:description" content="Five projects. One vision. The WhiteKid Tech empire.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://whitekidtechzw.netlify.app/">
+<meta property="og:site_name" content="WHITEKID TECH">
+<meta property="og:image" content="https://whitekidtechzw.netlify.app/assets/whitekid.jpg">
+<meta property="og:image:alt" content="WhiteKid Tech portrait">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WHITEKID TECH — Building Ideas. Writing Code. Creating a Legacy.">
+<meta name="twitter:description" content="Developer from Zimbabwe building bots, automation and digital projects.">
+<meta name="twitter:image" content="https://whitekidtechzw.netlify.app/assets/whitekid.jpg">
+<link rel="canonical" href="https://whitekidtechzw.netlify.app/">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050505'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='900' text-anchor='middle' fill='%2300E5FF'%3EWK%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://whitekidtechzw.netlify.app/#person", "name": "WhiteKid Tech", "url": "https://whitekidtechzw.netlify.app/", "image": "https://whitekidtechzw.netlify.app/assets/whitekid.jpg", "jobTitle": "Developer", "homeLocation": {"@type": "Country", "name": "Zimbabwe"}, "sameAs": ["https://github.com/whitekid-tech"], "slogan": "Building Ideas. Writing Code. Creating a Legacy."}, {"@type": "WebSite", "@id": "https://whitekidtechzw.netlify.app/#site", "name": "WHITEKID TECH", "url": "https://whitekidtechzw.netlify.app/", "inLanguage": "en", "publisher": {"@id": "https://whitekidtechzw.netlify.app/#person"}}, {"@type": "ItemList", "name": "WhiteKid Tech projects", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "CreativeWork", "name": "WHITEKID PRIME TV", "url": "https://whitekid-prime-tv.site.je", "description": "WhiteKid Prime TV — an entertainment project within the WhiteKid Tech digital ecosystem.", "creator": {"@id": "https://whitekidtechzw.netlify.app/#person"}}}, {"@type": "ListItem", "position": 2, "item": {"@type": "CreativeWork", "name": "WHITEKID PRIME BOT", "url": "https://t.me/whitekid_prime_bot", "description": "WhiteKid Prime Bot — a Telegram messaging bot project.", "creator": {"@id": "https://whitekidtechzw.netlify.app/#person"}}}, {"@type": "ListItem", "position": 3, "item": {"@type": "CreativeWork", "name": "VENOMOUS MD", "url": "https://t.me/VenomousMd_bot", "description": "Venomous MD — a Telegram messaging bot project.", "creator": {"@id": "https://whitekidtechzw.netlify.app/#person"}}}, {"@type": "ListItem", "position": 4, "item": {"@type": "CreativeWork", "name": "ASTRA MINI", "url": "https://astraminiv2.onrender.com/", "description": "Astra Mini — a lightweight bot project.", "creator": {"@id": "https://whitekidtechzw.netlify.app/#person"}}}, {"@type": "ListItem", "position": 5, "item": {"@type": "CreativeWork", "name": "KRYPTIX X-MD", "url": "https://kryptix-xmd.zone.id", "description": "Kryptix X-MD — a messaging bot project.", "creator": {"@id": "https://whitekidtechzw.netlify.app/#person"}}}]}]}</script>
+<style>
+:root{color-scheme:dark;--bk:#050505;--ch:#101114;--bl:#1677FF;--cy:#00E5FF;--wh:#fff;--sv:#A7ADB8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px;background:var(--bk)}
+body{margin:0;background:var(--bk);color:var(--wh);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Arial Black",Impact,system-ui,sans-serif;letter-spacing:.02em;margin:0;line-height:1.1}
+a{color:inherit}.mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+section{padding:90px 20px;max-width:1150px;margin:auto;position:relative}
+.eyebrow{color:var(--cy);font:600 .78rem ui-monospace,monospace;letter-spacing:.25em;text-transform:uppercase}
+h2{font-size:clamp(1.6rem,4.5vw,2.8rem);margin:10px 0 14px}
+.sub{color:var(--sv);max-width:620px}
+.glass{background:rgba(16,17,20,.65);border:1px solid rgba(0,229,255,.18);border-radius:18px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:12px;font:700 .85rem system-ui;letter-spacing:.12em;text-decoration:none;border:1px solid var(--bl);cursor:pointer;transition:.25s;color:#fff;background:linear-gradient(135deg,var(--bl),#0a4fd1)}
+.btn:hover,.btn:focus-visible{box-shadow:0 0 28px rgba(22,119,255,.6);transform:translateY(-2px)}
+.btn.ghost{background:transparent;border-color:rgba(0,229,255,.5);color:var(--cy)}
+.btn .ar{transition:transform .25s}.btn:hover .ar{transform:translateX(5px)}
+:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+/* loader */
+#ld{position:fixed;inset:0;background:var(--bk);z-index:99;display:grid;place-items:center;transition:opacity .6s}
+#ld span{font:900 3rem "Arial Black",sans-serif;color:var(--cy);animation:pl 1s infinite alternate;text-shadow:0 0 30px var(--cy)}
+@keyframes pl{from{opacity:.3}to{opacity:1}}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(10px + env(safe-area-inset-top,0px)) 20px 10px;display:flex;justify-content:space-between;align-items:center;background:rgba(5,5,5,.6);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,229,255,.1)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:900 .95rem "Arial Black",sans-serif;letter-spacing:.12em}
+.wk{width:36px;height:36px;border-radius:9px;display:grid;place-items:center;font:900 .85rem "Arial Black";color:var(--cy);border:1px solid var(--cy);box-shadow:0 0 14px rgba(0,229,255,.4);animation:gl 3s infinite alternate}
+@keyframes gl{to{box-shadow:0 0 26px rgba(0,229,255,.8)}}
+.links{display:flex;gap:26px}.links a{text-decoration:none;color:var(--sv);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;transition:.2s}.links a:hover{color:var(--cy)}
+#mb{display:none;background:none;border:1px solid rgba(0,229,255,.4);color:var(--cy);border-radius:8px;width:44px;height:44px;font-size:1.3rem}
+@media(max-width:760px){#mb{display:block}.links{display:none;position:fixed;top:calc(64px + env(safe-area-inset-top,0px));left:0;right:0;flex-direction:column;gap:0;background:rgba(5,5,5,.96)}.links.open{display:flex}.links a{padding:16px 24px;border-top:1px solid rgba(255,255,255,.06)}}
+/* hero */
+#home{min-height:100vh;min-height:100svh;max-width:none;padding:0;display:flex;align-items:center;overflow:hidden}
+#bg{position:absolute;inset:0;background:radial-gradient(ellipse at 75% 40%,rgba(22,119,255,.35),transparent 55%),radial-gradient(ellipse at 20% 90%,rgba(130,60,255,.22),transparent 50%),var(--bk)}
+#photo{position:absolute;right:0;top:0;bottom:0;width:62%;background-size:cover;background-position:center 20%;-webkit-mask-image:linear-gradient(to left,#000 45%,transparent);mask-image:linear-gradient(to left,#000 45%,transparent);will-change:transform}
+.ph{position:absolute;right:6%;top:50%;transform:translateY(-50%);width:min(34vw,380px);aspect-ratio:3/4;border:2px dashed rgba(0,229,255,.55);border-radius:20px;display:grid;place-items:center;text-align:center;padding:20px;color:var(--cy);font:.8rem ui-monospace,monospace;background:rgba(0,229,255,.05)}
+#grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,229,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,255,.06) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(circle at 60% 50%,#000,transparent 70%);mask-image:radial-gradient(circle at 60% 50%,#000,transparent 70%)}
+#cv{position:absolute;inset:0;width:100%;height:100%}
+#ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,5,5,.94) 25%,rgba(5,5,5,.45) 65%,rgba(5,5,5,.2))}
+.hc{position:relative;z-index:2;padding:110px 20px 70px;width:100%;max-width:1150px;margin:auto}
+.badge{display:inline-block;padding:7px 14px;border-radius:99px;border:1px solid rgba(0,229,255,.4);color:var(--cy);font:600 .72rem ui-monospace,monospace;letter-spacing:.14em;background:rgba(0,229,255,.07)}
+.hc h1{font-size:clamp(2.3rem,7.5vw,5.4rem);margin:22px 0 16px;max-width:760px;background:linear-gradient(180deg,#fff,#9fc4ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hc p{color:var(--sv);font-size:1.1rem;max-width:520px;margin:0 0 10px}
+.type{font:600 1.15rem ui-monospace,monospace;color:var(--cy);min-height:1.8em}.type::after{content:"▌";animation:bk 1s steps(2) infinite}
+@keyframes bk{50%{opacity:0}}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.sc{position:absolute;bottom:22px;left:50%;width:22px;height:36px;border:2px solid rgba(0,229,255,.5);border-radius:12px;z-index:2}
+.sc::after{content:"";position:absolute;left:50%;top:6px;width:4px;height:7px;margin-left:-2px;background:var(--cy);border-radius:2px;animation:sd 1.6s infinite}
+@keyframes sd{to{transform:translateY(12px);opacity:0}}
+@media(max-width:760px){#photo{width:100%;opacity:.55;-webkit-mask-image:linear-gradient(to bottom,#000 30%,transparent);mask-image:linear-gradient(to bottom,#000 30%,transparent);background-position:center 15%}.ph{width:46vw;right:50%;transform:translate(50%,0);top:90px}#ov{background:linear-gradient(180deg,rgba(5,5,5,.2),rgba(5,5,5,.92) 55%)}.hc{padding-top:48vh}.sc{display:none}}
+/* about */
+.ab{display:grid;grid-template-columns:320px 1fr;gap:40px;align-items:center;margin-top:30px}
+.pc{padding:12px;aspect-ratio:3/4;position:relative;overflow:hidden}.pc div{width:100%;height:100%;border-radius:12px;background-size:cover;background-position:center top;display:grid;place-items:center;text-align:center;color:var(--cy);font:.78rem ui-monospace,monospace;border:1px dashed rgba(0,229,255,.4);padding:14px}
+.ab p{color:#d3d7de;margin:0 0 14px}.sig{color:var(--cy);font:600 .8rem ui-monospace,monospace;letter-spacing:.2em;margin-top:18px}
+.code{position:absolute;right:10px;top:40px;color:rgba(0,229,255,.12);font:.8rem/1.6 ui-monospace,monospace;pointer-events:none;white-space:pre}
+@media(max-width:760px){.ab{grid-template-columns:1fr}.pc{max-width:300px}.code{display:none}}
+/* projects */
+.fl{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}
+.fl button{background:none;border:1px solid rgba(255,255,255,.18);color:var(--sv);padding:9px 18px;border-radius:99px;cursor:pointer;font:600 .75rem system-ui;letter-spacing:.1em;min-height:40px}
+.fl button.on{border-color:var(--cy);color:var(--cy);background:rgba(0,229,255,.08)}
+#pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:22px}
+.card{padding:26px;position:relative;overflow:hidden;transition:.35s;display:flex;flex-direction:column;gap:14px;--a:var(--bl)}
+.card::before{content:"";position:absolute;inset:-1px;border-radius:18px;padding:1px;background:conic-gradient(from var(--r,0deg),transparent 60%,var(--a),transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:rt 6s linear infinite;pointer-events:none}
+@property --r{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes rt{to{--r:360deg}}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 50px -12px var(--a)}
+.ic{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.04);border:1px solid var(--a);color:var(--a)}
+.ic svg{width:28px;height:28px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.tag{font:600 .66rem ui-monospace,monospace;letter-spacing:.14em;padding:5px 10px;border-radius:99px;border:1px solid var(--a);color:var(--a)}
+.st{font:600 .62rem ui-monospace,monospace;letter-spacing:.14em;color:var(--sv)}.st::before{content:"● ";color:#8a8f99}
+.card h3{font-size:1.35rem}.card p{color:var(--sv);margin:0;flex:1;font-size:.95rem}.kind{color:var(--sv);font:.7rem ui-monospace,monospace}
+.card .btn{justify-content:center;border-color:var(--a);background:rgba(255,255,255,.03)}.card .btn:hover{background:var(--a);color:#000}
+/* skills */
+#sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:28px}
+.sk{padding:22px 14px;text-align:center;transition:.3s}.sk:hover{border-color:var(--cy);transform:translateY(-4px)}.sk b{display:block;font-size:1.6rem;color:var(--cy)}.sk span{font-size:.82rem;color:#d3d7de}
+/* terminal */
+.tm{margin-top:26px;border-radius:14px;overflow:hidden;border:1px solid rgba(0,229,255,.25);box-shadow:0 0 60px rgba(0,229,255,.1);background:#07090c}
+.tb{display:flex;gap:7px;padding:11px 14px;background:#0f1318;align-items:center}.tb i{width:11px;height:11px;border-radius:50%;background:#333}.tb i:nth-child(1){background:#ff5f56}.tb i:nth-child(2){background:#ffbd2e}.tb i:nth-child(3){background:#27c93f}.tb span{margin-left:10px;color:var(--sv);font:.72rem ui-monospace,monospace}
+#to{height:300px;overflow-y:auto;padding:14px;font:.88rem/1.55 ui-monospace,Menlo,monospace;color:#3dffb0;white-space:pre-wrap;word-break:break-word}#to a{color:var(--cy)}
+.ti{display:flex;gap:8px;padding:0 14px 14px;font:.88rem ui-monospace,monospace;color:var(--cy);align-items:center}
+#tin{flex:1;background:none;border:0;color:#fff;font:inherit;outline:none;min-width:0;caret-color:var(--cy);font-size:16px}
+.qc{display:flex;gap:8px;flex-wrap:wrap;padding:0 14px 14px}.qc button{background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.3);color:var(--cy);border-radius:8px;padding:8px 14px;font:.78rem ui-monospace,monospace;cursor:pointer;min-height:38px}
+/* stats */
+#st{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:28px}
+.sn{padding:26px}.sn b{display:block;font:900 2.6rem "Arial Black",sans-serif;color:var(--cy)}.sn span{color:var(--sv);font-size:.85rem}.sn small{display:block;color:#6d7380;font-size:.68rem;margin-top:6px}
+/* connect/contact */
+#so{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:20px}
+form{padding:26px;display:flex;flex-direction:column;gap:14px}
+label{font-size:.75rem;letter-spacing:.14em;color:var(--sv);text-transform:uppercase}
+input,textarea{width:100%;margin-top:6px;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.15);border-radius:10px;color:#fff;padding:13px;font:16px system-ui}
+input:focus,textarea:focus{border-color:var(--cy);outline:none}
+.er{color:#ff7a8a;font-size:.78rem;min-height:1em;display:block}
+#fm{font-size:.88rem;min-height:1.3em}
+@media(max-width:760px){.ct{grid-template-columns:1fr}}
+footer{border-top:1px solid rgba(0,229,255,.12);padding:50px 20px 30px;text-align:center;color:var(--sv)}
+footer .wk{margin:0 auto 12px}footer nav{all:unset}.fn{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin:18px 0}.fn a{text-decoration:none;font-size:.85rem}.fn a:hover{color:var(--cy)}
+#up{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:46px;height:46px;border-radius:50%;border:1px solid var(--cy);background:rgba(5,5,5,.8);color:var(--cy);cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:40;font-size:1.2rem}#up.s{opacity:1;pointer-events:auto}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+
+/* v2 additions */
+.ctl{display:flex;gap:10px;flex-wrap:wrap;margin:-8px 0 22px}.ctl input{flex:1;min-width:200px;margin:0}.ctl select{background:rgba(0,0,0,.4);color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:12px;font:16px system-ui}
+form.cin{flex-direction:row;padding:12px 16px;gap:10px;border-top:1px solid rgba(0,229,255,.15);border-radius:0;background:none;border-left:0;border-right:0;border-bottom:0}.cin input{margin:0}
+.chat{margin-top:26px;overflow:hidden}.chh{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid rgba(0,229,255,.15);font:600 .75rem ui-monospace,monospace;color:var(--cy);letter-spacing:.14em}
+#cb{height:380px;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.m{max-width:85%;padding:11px 15px;border-radius:14px;font-size:.93rem;white-space:pre-wrap;word-break:break-word}.m.user{align-self:flex-end;background:linear-gradient(135deg,var(--bl),#6a3dff)}.m.assistant{align-self:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(0,229,255,.18)}.m a{color:var(--cy)}
+.dots i{display:inline-block;width:7px;height:7px;margin:0 2px;border-radius:50%;background:var(--cy);animation:dt 1s infinite}.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}@keyframes dt{50%{transform:translateY(-5px);opacity:.4}}
+.mini{background:none;border:1px solid rgba(0,229,255,.35);color:var(--cy);border-radius:8px;padding:6px 12px;font:.72rem ui-monospace,monospace;cursor:pointer;min-height:34px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;padding:0 16px 12px}
+.tbl{width:100%;border-collapse:collapse;font-size:.88rem}.tbl th,.tbl td{text-align:left;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.07)}.tbl th{color:var(--sv);font:600 .7rem ui-monospace,monospace;letter-spacing:.14em}.tw{overflow-x:auto;margin-top:22px}
+.gh{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:18px}.gh .glass{padding:18px;font-size:.88rem;color:#d3d7de}.gh b{color:#fff}
+.up{color:#2BFF9A}.dn{color:#ff7a8a}.wn{color:#ffbd2e}.note{color:var(--sv);font-size:.8rem;margin-top:10px}
+</style>
+</head>
+<body>
+<div id="ld" aria-hidden="true"><span>WK</span></div>
+<nav aria-label="Main">
+  <a class="logo" href="#home"><span class="wk">WK</span><span>WHITEKID TECH</span></a>
+  <button id="mb" aria-label="Open menu" aria-expanded="false">☰</button>
+  <div class="links" id="lk"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#ai">AI</a><a href="#status">Status</a><a href="#contact">Contact</a></div>
+</nav>
+<main>
+<section id="home" aria-label="Hero">
+  <div id="bg"><div id="photo" role="img" aria-label="WhiteKid portrait"></div><div id="ph" class="ph" hidden>YOUR PHOTO GOES HERE<br><br>Set PHOTO in the config at the top of the script.</div></div>
+  <div id="grid"></div><canvas id="cv" aria-hidden="true"></canvas><div id="ov"></div>
+  <div class="hc">
+    <span class="badge">BUILDING SOMETHING EXTRAORDINARY ⚡</span>
+    <h1>THE MIND BEHIND THE CODE.</h1>
+    <p>I’m WhiteKid Tech — developer, innovator, and creator of digital experiences.</p>
+    <div class="type" id="ty" aria-live="off"></div>
+    <div class="cta"><a class="btn" href="#projects">EXPLORE MY EMPIRE <span class="ar">→</span></a><a class="btn ghost" href="#contact">CONNECT WITH ME</a></div>
+  </div>
+  <div class="sc" aria-hidden="true"></div>
+</section>
+
+<section id="about"><div class="code" aria-hidden="true">const build = () =&gt; {
+  idea.toProject();
+  return legacy;
+};</div>
+  <div class="eyebrow">// about</div><h2 class="rv">MORE THAN A DEVELOPER. A BUILDER.</h2>
+  <div class="ab rv">
+    <div class="glass pc"><div id="ap"></div></div>
+    <div>
+      <p>I’m WhiteKid Tech, a developer from Zimbabwe with a passion for technology, automation, bots, and digital innovation.</p>
+      <p>I enjoy turning ideas into digital projects and creating experiences that reflect creativity, ambition, and continuous learning.</p>
+      <p>From messaging bots to entertainment platforms, each project represents another step in my journey toward building a recognizable technology brand.</p>
+      <p>My mission is simple: keep creating, keep improving, and build something that lasts.</p>
+      <div class="sig">CRAFTED BY WHITEKID TECH 🇿🇼</div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="eyebrow">// directory</div>
+  <h2 class="rv">FIVE PROJECTS. ONE VISION. THE WHITEKID TECH EMPIRE.</h2>
+  <p class="sub rv">From messaging bots to entertainment platforms, explore the projects powering my journey as a developer.</p>
+  <div class="fl" id="fl" role="group" aria-label="Filter projects"></div>
+  <div class="ctl"><input id="q" type="search" placeholder="Search projects…" aria-label="Search projects"><select id="srt" aria-label="Sort projects"><option value="def">Default order</option><option value="az">Name A–Z</option><option value="za">Name Z–A</option><option value="cat">Category</option></select></div>
+  <div id="pg"></div>
+</section>
+
+<section id="skills">
+  <div class="eyebrow">// stack</div><h2 class="rv">THE TOOLS BEHIND THE VISION.</h2>
+  <div id="sk"></div>
+</section>
+
+<section id="terminal">
+  <div class="eyebrow">// shell</div><h2 class="rv">ENTER THE WHITEKID TERMINAL.</h2>
+  <div class="tm rv">
+    <div class="tb"><i></i><i></i><i></i><span>whitekid@tech:~</span></div>
+    <div id="to" role="log" aria-live="polite"></div>
+    <form class="ti" id="tf" style="padding:0 14px 14px;flex-direction:row;background:none;border:0"><span>$</span><input id="tin" aria-label="Terminal command" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type help"></form>
+    <div class="qc" id="qc"></div>
+  </div>
+</section>
+
+<section id="ai">
+  <div class="eyebrow">// whitekid ai</div><h2 class="rv">ASK WHITEKID AI.</h2>
+  <p class="sub rv">Ask about WhiteKid Tech, the projects, the technologies used, or get a programming idea.</p>
+  <div class="glass chat rv">
+    <div class="chh"><span>WHITEKID AI ● ONLINE-ON-DEMAND</span><button class="mini" id="cn" type="button">NEW CHAT</button></div>
+    <div id="cb" role="log" aria-live="polite"></div>
+    <div class="chips" id="cc"></div>
+    <form class="cin" id="cfm"><input id="ci" aria-label="Message WHITEKID AI" maxlength="1000" autocomplete="off" placeholder="Ask anything…"><button class="btn" id="cs" type="submit">SEND</button></form>
+  </div>
+</section>
+
+<section id="github">
+  <div class="eyebrow">// github</div><h2 class="rv">LIVE FROM GITHUB.</h2>
+  <div id="gh" class="note">Loading GitHub data…</div>
+</section>
+
+<section id="status">
+  <div class="eyebrow">// status</div><h2 class="rv">LIVE PROJECT STATUS.</h2>
+  <p class="sub">Real HTTP checks run from the server when you load or refresh this page. Telegram bots can’t be probed externally, so they’re marked N/A rather than guessed.</p>
+  <div class="glass tw"><table class="tbl"><thead><tr><th>PROJECT</th><th>STATE</th><th>HTTP</th><th>RESPONSE</th></tr></thead><tbody id="stb"><tr><td colspan="4">Checking…</td></tr></tbody></table></div>
+  <p class="note"><span id="stt"></span> <button class="mini" id="str" type="button">RE-CHECK</button></p>
+</section>
+
+<section id="log">
+  <div class="eyebrow">// stats</div><h2 class="rv">THE BUILD LOG.</h2>
+  <div id="st"></div>
+</section>
+
+<section id="connect">
+  <div class="eyebrow">// network</div><h2 class="rv">FIND THE EMPIRE ONLINE.</h2>
+  <div id="so"></div>
+  <form class="glass cin" id="nl" name="newsletter" style="margin-top:24px;max-width:560px;border-radius:14px;border:1px solid rgba(0,229,255,.18)"><input type="email" name="email" id="ne" aria-label="Newsletter email" placeholder="Newsletter — your email" required autocomplete="email"><p hidden><label>Leave empty <input name="bot-field"></label></p><button class="btn" type="submit">SUBSCRIBE</button></form><div id="nm" class="note" role="status"></div>
+</section>
+
+<section id="contact">
+  <div class="eyebrow">// contact</div><h2 class="rv">LET’S BUILD SOMETHING LEGENDARY.</h2>
+  <p class="sub rv">Have an idea, a collaboration in mind, or a project worth building? Let’s connect.</p>
+  <div class="ct">
+    <form class="glass" id="cf" name="contact" novalidate><p hidden><label>Leave empty <input name="bot-field"></label></p>
+      <div><label for="n">Name</label><input id="n" name="name" autocomplete="name"><span class="er" id="en"></span></div>
+      <div><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email"><span class="er" id="ee"></span></div>
+      <div><label for="m">Message</label><textarea id="m" name="message" rows="5"></textarea><span class="er" id="em"></span></div>
+      <button class="btn" id="sb" type="submit">SEND MESSAGE <span class="ar">→</span></button>
+      <div id="fm" role="status"></div>
+    </form>
+    <div class="glass" style="padding:26px;align-self:start">
+      <h3 style="font-size:1.1rem;margin-bottom:10px">DIRECT LINKS</h3>
+      <p class="sub" style="font-size:.92rem">Prefer a quicker route? Reach me through GitHub or the Telegram bots.</p>
+      <p><a class="btn ghost" href="https://github.com/whitekid-tech" target="_blank" rel="noopener noreferrer">GITHUB PROFILE ↗</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wk">WK</div><b class="mono" style="letter-spacing:.2em;color:#fff">WHITEKID TECH</b>
+  <p>Building ideas. Writing code. Creating a legacy.</p>
+  <div class="fn"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a href="https://github.com/whitekid-tech" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+  <div class="mono" style="font-size:.72rem;letter-spacing:.2em;color:var(--cy)">DESIGNED WITH VISION. BUILT WITH PURPOSE.</div>
+  <p style="font-size:.78rem;margin-top:14px">© <span id="yr"></span> WhiteKid Tech 🇿🇼</p>
+</footer>
+<button id="up" aria-label="Back to top">↑</button>
+
+<script>
+/* ===== CENTRAL CONFIG — edit here ===== */
+const CONFIG={
+  PHOTO:"/assets/whitekid.jpg",            // paste a data: URI or hosted image URL of your photo here
+  FORM_ENDPOINT:"",    // e.g. a Formspree URL: https://formspree.io/f/xxxx
+  GITHUB:"https://github.com/whitekid-tech",
+  REPOS:null           // set a number once you confirm your public repo count
+};
+const PROJECTS=[
+ {id:"prime-tv",name:"WHITEKID PRIME TV",cat:"LIVE TV PLATFORM",type:"site",url:"https://whitekid-prime-tv.site.je",btn:"WATCH LIVE TV",color:"#1677FF",icon:"tv",status:"UNVERIFIED",desc:"Welcome to WhiteKid Prime TV — an entertainment project within the WhiteKid Tech digital ecosystem."},
+ {id:"prime-bot",name:"WHITEKID PRIME BOT",cat:"TELEGRAM BOT",type:"bot",handle:"@whitekid_prime_bot",url:"https://t.me/whitekid_prime_bot",btn:"LAUNCH WHITEKID PRIME",color:"#00E5FF",icon:"bot",status:"UNVERIFIED",desc:"WhiteKid Prime Bot — a messaging bot project representing the creativity and ambition behind the WhiteKid Tech brand."},
+ {id:"venomous",name:"VENOMOUS MD",cat:"TELEGRAM BOT",type:"bot",handle:"@VenomousMd_bot",url:"https://t.me/VenomousMd_bot",btn:"SUMMON VENOMOUS",color:"#2BFF9A",icon:"fang",status:"UNVERIFIED",desc:"Venomous MD — a bold messaging bot project with a distinctive identity in the WhiteKid Tech ecosystem."},
+ {id:"astra",name:"ASTRA MINI",cat:"MESSAGING BOT PROJECT",type:"bot",url:"https://astraminiv2.onrender.com/",btn:"EXPLORE ASTRA MINI",color:"#4D9BFF",icon:"star",status:"UNVERIFIED",desc:"Astra Mini — a lightweight bot project that forms part of the WhiteKid Tech development journey."},
+ {id:"kryptix",name:"KRYPTIX X-MD",cat:"MESSAGING BOT PROJECT",type:"bot",url:"https://kryptix-xmd.zone.id",btn:"ENTER KRYPTIX",color:"#00C8FF",icon:"hex",status:"UNVERIFIED",desc:"Kryptix X-MD — a distinctive bot project showcasing the creativity and ambition of the WhiteKid Tech ecosystem."}
+];
+const SKILLS=[["{ }","Bot Development"],["JS","JavaScript"],["⬢","Node.js"],["◧","Web Development"],["⇄","API Integration"],["⚙","Automation"],["✦","Artificial Intelligence"],["⎇","Git & GitHub"],["▭","Responsive Design"]];
+const ROLES=["Bot Developer","AI Enthusiast","Digital Creator","Automation Builder","Technology Innovator"];
+const ICONS={
+ tv:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M8 3l4 3 4-3M8 21h8"/></svg>',
+ bot:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M2 13v2M22 13v2"/></svg>',
+ fang:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 5l8 3 8-3-2 8c-1 3-3 4-6 6-3-2-5-3-6-6z"/><path d="M9 11l1 3 1-3M13 11l1 3 1-3"/></svg>',
+ star:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg>',
+ hex:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 7l4.5 2.5v5L12 17l-4.5-2.5v-5z"/></svg>'};
+/* ===== helpers ===== */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+$("#yr").textContent=new Date().getFullYear();
+addEventListener("load",()=>{const l=$("#ld");l.style.opacity=0;setTimeout(()=>l.remove(),600)});
+/* photo */
+if(CONFIG.PHOTO){$("#photo").style.backgroundImage='url("'+CONFIG.PHOTO+'")';$("#ap").style.backgroundImage='url("'+CONFIG.PHOTO+'")';$("#ap").style.cssText+=";background-size:cover;border:0"}
+else{$("#ph").hidden=false;$("#ap").innerHTML="YOUR PHOTO GOES HERE<br>(set PHOTO in CONFIG)"}
+/* nav */
+const mb=$("#mb"),lk=$("#lk");
+mb.onclick=()=>{const o=lk.classList.toggle("open");mb.setAttribute("aria-expanded",o);mb.textContent=o?"✕":"☰"};
+$$("#lk a").forEach(a=>a.onclick=()=>{lk.classList.remove("open");mb.textContent="☰"});
+/* typing */
+(()=>{const el=$("#ty");if(reduce){el.textContent=ROLES[0];return}let r=0,c=0,d=false;
+(function t(){const w=ROLES[r];c+=d?-1:1;el.textContent=w.slice(0,c);let s=d?35:70;
+if(!d&&c===w.length){d=true;s=1400}else if(d&&c===0){d=false;r=(r+1)%ROLES.length;s=300}setTimeout(t,s)})()})();
+/* particles */
+(()=>{if(reduce)return;const cv=$("#cv"),x=cv.getContext("2d");let w,h,P=[];
+const rs=()=>{w=cv.width=cv.offsetWidth;h=cv.height=cv.offsetHeight;P=Array.from({length:Math.min(60,w/18|0)},()=>({x:Math.random()*w,y:Math.random()*h,v:.2+Math.random()*.6,r:Math.random()*1.6+.4}))};
+rs();addEventListener("resize",rs);
+(function f(){x.clearRect(0,0,w,h);for(const p of P){p.y-=p.v;if(p.y<0){p.y=h;p.x=Math.random()*w}x.fillStyle="rgba(0,229,255,.55)";x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill()}requestAnimationFrame(f)})()})();
+/* parallax + back to top */
+addEventListener("scroll",()=>{const y=scrollY;$("#up").classList.toggle("s",y>600);if(!reduce&&y<innerHeight)$("#photo").style.transform="translateY("+y*.15+"px)"},{passive:true});
+$("#up").onclick=()=>scrollTo({top:0});
+/* reveal */
+const io=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add("in");io.unobserve(i.target)}}),{threshold:.12});
+$$(".rv").forEach(e=>io.observe(e));
+/* projects */
+let curF="all";
+const matches=p=>{const q=$("#q").value.trim().toLowerCase();return !q||(p.name+" "+p.cat+" "+p.desc+" "+(p.handle||"")).toLowerCase().includes(q)};
+const sorter=(a,b)=>{const v=$("#srt").value;return v==="az"?a.name.localeCompare(b.name):v==="za"?b.name.localeCompare(a.name):v==="cat"?a.cat.localeCompare(b.cat):0};
+const pg=$("#pg"),fl=$("#fl");
+function cards(f){pg.innerHTML="";PROJECTS.filter(p=>(f==="all"||p.type===f)&&matches(p)).sort(sorter).forEach(p=>{
+ const c=document.createElement("article");c.className="card glass rv in";c.style.setProperty("--a",p.color);
+ c.innerHTML='<div class="row"><div class="ic">'+ICONS[p.icon]+'</div><div style="text-align:right"><div class="st" data-s="'+p.id+'">'+p.status+'</div><div class="kind">'+(p.type==="bot"?"TELEGRAM / BOT":"WEBSITE")+'</div></div></div><span class="tag" style="align-self:flex-start">'+p.cat+'</span><h3>'+p.name+'</h3>'+(p.handle?'<div class="kind">'+p.handle+'</div>':"")+'<p>'+p.desc+'</p><a class="btn" href="'+p.url+'" target="_blank" rel="noopener noreferrer" aria-label="'+p.btn+' — opens '+p.name+' in a new tab">'+p.btn+' <span class="ar">→</span></a>';
+ pg.appendChild(c)})}
+[["all","ALL"],["site","WEBSITES"],["bot","BOTS"]].forEach(([k,l],i)=>{const b=document.createElement("button");b.textContent=l;b.className=i?"":"on";b.onclick=()=>{$$("#fl button").forEach(x=>x.classList.remove("on"));b.classList.add("on");curF=k;cards(k)};fl.appendChild(b)});
+cards("all");
+$("#q").oninput=()=>cards(curF);$("#srt").onchange=()=>cards(curF);
+/* skills */
+$("#sk").innerHTML=SKILLS.map(s=>'<div class="glass sk rv"><b>'+s[0]+'</b><span>'+s[1]+'</span></div>').join("");
+$$(".sk").forEach(e=>io.observe(e));
+/* stats */
+const bots=PROJECTS.filter(p=>p.type==="bot").length;
+const ST=[["Projects created",PROJECTS.length,"from project config"],["Bots developed",bots,"from project config"],["Public GitHub repositories",CONFIG.REPOS,CONFIG.REPOS==null?"not verified — set CONFIG.REPOS":"from config"],["Technologies listed",SKILLS.length,"see Skills section"]];
+$("#st").innerHTML=ST.map(s=>'<div class="glass sn rv"><b data-n="'+(s[1]==null?"":s[1])+'">'+(s[1]==null?"—":0)+'</b><span>'+s[0]+'</span><small>'+s[2]+'</small></div>').join("");
+const so=new IntersectionObserver(e=>e.forEach(i=>{if(!i.isIntersecting)return;so.unobserve(i.target);const b=i.target.querySelector("b"),n=+b.dataset.n;if(!b.dataset.n)return;let k=0;const t=setInterval(()=>{k++;b.textContent=reduce?n:Math.round(n*k/30);if(k>=30||reduce){b.textContent=n;clearInterval(t)}},30)}),{threshold:.4});
+$$(".sn").forEach(e=>{io.observe(e);so.observe(e)});
+/* socials */
+$("#so").innerHTML=[["GitHub",CONFIG.GITHUB],...PROJECTS.map(p=>[p.name,p.url])].map(l=>'<a class="btn ghost" href="'+l[1]+'" target="_blank" rel="noopener noreferrer">'+l[0]+' ↗</a>').join("");
+/* terminal */
+const to=$("#to"),tin=$("#tin");
+function out(t,h){const d=document.createElement("div");if(h)d.innerHTML=h;else d.textContent=t;to.appendChild(d);to.scrollTop=to.scrollHeight}
+const esc=x=>String(x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const VER="2.0.0",ACHIEVEMENTS=[],ROADMAP=[]; /* owner: add real entries as {t:"title",d:"detail"} */
+const api=async(p,o)=>{const r=await fetch("/api/"+p,o);const d=await r.json().catch(()=>({}));if(!r.ok)throw new Error(d.error||"HTTP "+r.status);return d};
+const post=(name,o)=>fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams({"form-name":name,...o}).toString()});
+const lnk=(u,t)=>'<a href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">'+esc(t||u)+'</a>';
+const ago=d=>{const m=Math.max(0,(Date.now()-new Date(d))/6e4|0);return m<60?m+"m ago":m<1440?(m/60|0)+"h ago":(m/1440|0)+"d ago"};
+const CMD={
+ help:()=>out("",'<b>WHITEKID TERMINAL '+VER+'</b>\n'+Object.entries(DESC).map(([k,v])=>"  "+k.padEnd(13)+v).join("\n")),
+ about:()=>out("",'<b>WHITEKID TECH 🇿🇼</b>\nDeveloper, creator and builder of digital projects — bots, automation and AI.\n<i>Building Ideas. Writing Code. Creating a Legacy.</i>'),
+ projects:()=>out("",PROJECTS.map((p,i)=>(i+1)+". "+lnk(p.url,p.name)+" — "+esc(p.cat)).join("\n")),
+ skills:()=>out("",SKILLS.map(k=>"  ▸ "+esc(k[1])).join("\n")),
+ github:async()=>{out("Fetching GitHub…");const d=await api("github");out("",'<b>'+lnk(d.profile.url,"@"+d.profile.login)+'</b> — '+d.profile.repos+' public repos, '+d.profile.followers+' followers\n'+(d.repos.length?d.repos.map(r=>"  ▸ "+lnk(r.url,r.name)+" (pushed "+ago(r.pushed)+")").join("\n"):"No public repositories."))},
+ contact:()=>{out("Navigating to contact...");$("#contact").scrollIntoView({behavior:reduce?"auto":"smooth"})},
+ socials:()=>out("",[["GitHub",CONFIG.GITHUB],...PROJECTS.map(p=>[p.name,p.url])].map(l=>"  ▸ "+lnk(l[1],l[0])).join("\n")),
+ achievements:()=>out(ACHIEVEMENTS.length?ACHIEVEMENTS.map(a=>"★ "+a.t+(a.d?" — "+a.d:"")).join("\n"):"No achievements published yet."),
+ roadmap:()=>out(ROADMAP.length?ROADMAP.map(a=>"→ "+a.t+(a.d?" — "+a.d:"")).join("\n"):"No roadmap published yet."),
+ status:async()=>{out("Checking projects…");const d=await api("status");out("",d.results.map(r=>"  "+(r.state==="ONLINE"?"●":r.state==="N/A"?"○":"✕")+" "+esc(r.name).padEnd(20)+esc(r.state)+(r.ms?" ("+r.ms+"ms)":"")).join("\n"))},
+ ai:async q=>{if(!q){out("Usage: ai <question> — opening the chat…");return $("#ai").scrollIntoView({behavior:reduce?"auto":"smooth"})}out("WHITEKID AI is thinking…");const d=await api("ai",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({messages:[{role:"user",content:q}]})});out(d.reply)},
+ clear:()=>{to.textContent=""},
+ date:()=>out(new Date().toString()),
+ version:()=>out("WHITEKID TERMINAL v"+VER)};
+const DESC={help:"list commands",about:"who is WhiteKid Tech",projects:"project directory",skills:"tech stack",github:"live GitHub data",contact:"jump to contact form",socials:"all links",achievements:"awards",roadmap:"what’s next",status:"live project status",ai:"ai <question>",clear:"clear screen",date:"current date/time",version:"terminal version"};
+async function run(v){const t=v.trim();if(!t)return;const [c,...a]=t.split(/\s+/),f=CMD[c.toLowerCase()];out("$ "+t);if(!f)return out("Command not found: "+t+". Type help.");try{await f(a.join(" "))}catch(e){out("Error: "+e.message)}}
+$("#tf").onsubmit=e=>{e.preventDefault();run(tin.value);tin.value=""};
+$("#qc").innerHTML=Object.keys(CMD).map(k=>'<button type="button" data-c="'+k+'">'+k+'</button>').join("");
+$$("#qc button").forEach(b=>b.onclick=()=>run(b.dataset.c));
+out("WHITEKID TERMINAL v"+VER+" — type help to begin.");
+/* contact form */
+$("#cf").onsubmit=async e=>{e.preventDefault();
+ const n=$("#n").value.trim(),m=$("#e").value.trim(),g=$("#m").value.trim(),fm=$("#fm");
+ $("#en").textContent=n.length<2?"Please enter your name.":"";
+ $("#ee").textContent=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m)?"":"Please enter a valid email address.";
+ $("#em").textContent=g.length<10?"Message should be at least 10 characters.":"";
+ if($$(".er").some(x=>x.textContent)){fm.style.color="#ff7a8a";fm.textContent="Please fix the highlighted fields.";return}
+  const b=$("#sb");b.disabled=true;b.firstChild.textContent="SENDING… ";fm.style.color="var(--sv)";fm.textContent="";
+ try{const r=await(CONFIG.FORM_ENDPOINT?fetch(CONFIG.FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({name:n,email:m,message:g})}):post("contact",{name:n,email:m,message:g}));
+  if(!r.ok)throw 0;fm.style.color="#2BFF9A";fm.textContent="Message sent. Thank you — I’ll get back to you.";e.target.reset()}
+ catch{fm.style.color="#ff7a8a";fm.textContent="Sending failed. Please try again or contact me via GitHub."}
+ b.disabled=false;b.firstChild.textContent="SEND MESSAGE "};
+
+/* ===== v2: AI chat ===== */
+(()=>{const K="wk_ai_chat_v1",box=$("#cb");let H=[],busy=false;
+try{H=JSON.parse(localStorage.getItem(K)||"[]").filter(m=>m&&typeof m.content==="string").slice(-40)}catch{}
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(H.slice(-40)))}catch{}};
+const lin=t=>esc(t).replace(/https?:\/\/[^\s<)]+/g,u=>'<a href="'+u+'" target="_blank" rel="noopener noreferrer">'+u+'</a>');
+const bub=(r,t,raw)=>{const d=document.createElement("div");d.className="m "+r;raw?d.innerHTML=t:d.innerHTML=lin(t);box.appendChild(d);box.scrollTop=box.scrollHeight;return d};
+const greet=()=>bub("assistant","Hi, I’m WHITEKID AI. Ask me about WhiteKid Tech, the projects, the tech stack, or ask for a programming idea.");
+const draw=()=>{box.innerHTML="";H.length?H.forEach(m=>bub(m.role,m.content)):greet()};
+async function ask(q){if(busy||!q.trim())return;busy=true;$("#cs").disabled=true;H.push({role:"user",content:q});save();bub("user",q);
+ const w=bub("assistant",'<span class="dots" aria-label="typing"><i></i><i></i><i></i></span>',true);
+ try{const d=await api("ai",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({messages:H.slice(-12)})});
+  if(!reduce){for(let i=0;i<d.reply.length;i+=4){w.textContent=d.reply.slice(0,i+4);box.scrollTop=box.scrollHeight;await new Promise(r=>setTimeout(r,12))}}
+  w.innerHTML=lin(d.reply);H.push({role:"assistant",content:d.reply});save()}
+ catch(e){w.textContent="⚠ "+e.message;H.pop();save()}
+ busy=false;$("#cs").disabled=false;box.scrollTop=box.scrollHeight}
+$("#cfm").onsubmit=e=>{e.preventDefault();const i=$("#ci"),q=i.value;i.value="";ask(q)};
+$("#cn").onclick=()=>{H=[];save();draw()};
+$("#cc").innerHTML=["Who is WhiteKid Tech?","Show me the projects","Give me a bot idea","Which technologies are used?"].map(q=>'<button type="button" class="mini">'+q+'</button>').join("");
+$$("#cc button").forEach(b=>b.onclick=()=>ask(b.textContent));draw()})();
+/* ===== v2: GitHub + status (loaded when scrolled near) ===== */
+const lazy=(sel,fn)=>{let d=0;new IntersectionObserver((e,o)=>{if(e[0].isIntersecting&&!d){d=1;o.disconnect();fn()}},{rootMargin:"300px"}).observe($(sel))};
+lazy("#github",async()=>{const g=$("#gh");try{const d=await api("github");
+ g.className="";g.innerHTML='<div class="gh"><div class="glass"><b>'+lnk(d.profile.url,"@"+esc(d.profile.login))+'</b><br>'+d.profile.repos+' public repos · '+d.profile.followers+' followers · '+d.profile.following+' following</div></div><div class="gh">'+
+ d.repos.map(r=>'<div class="glass"><b>'+lnk(r.url,r.name)+'</b><br>'+esc(r.desc||"No description")+'<br><span class="note">'+esc(r.lang||"—")+' · ★ '+r.stars+' · pushed '+ago(r.pushed)+'</span></div>').join("")+'</div>'+
+ '<div class="glass tw" style="padding:16px;margin-top:18px"><b>Recent public activity</b><br>'+(d.events.length?d.events.map(e=>'<div class="note">'+esc(e.type.replace("Event",""))+' · '+esc(e.repo)+(e.commits?' · '+e.commits+' commit(s)':"")+' · '+ago(e.at)+'</div>').join(""):'<div class="note">No recent public activity.</div>')+'</div>'}
+ catch(e){g.textContent="GitHub data is unavailable: "+e.message}});
+async function loadStatus(){const b=$("#stb");try{const d=await api("status"),cl={ONLINE:"up","NO RESPONSE":"dn",DEGRADED:"wn"};
+ b.innerHTML=d.results.map(r=>'<tr><td>'+lnk(r.url,r.name)+'</td><td class="'+(cl[r.state]||"")+'">'+esc(r.state)+'</td><td>'+(r.code||"—")+'</td><td>'+(r.ms?r.ms+" ms":esc(r.note||"—"))+'</td></tr>').join("");
+ $("#stt").textContent="Last checked "+new Date(d.checkedAt).toLocaleTimeString()+".";
+ d.results.forEach(r=>{const el=$('[data-s="'+r.id+'"]');if(el){el.textContent=r.state==="N/A"?"TELEGRAM BOT":r.state;if(cl[r.state])el.className="st "+cl[r.state]}})}
+ catch(e){b.innerHTML='<tr><td colspan="4">Status unavailable: '+esc(e.message)+'</td></tr>'}}
+lazy("#status",loadStatus);$("#str").onclick=loadStatus;
+/* ===== v2: newsletter ===== */
+$("#nl").onsubmit=async e=>{e.preventDefault();const m=$("#ne").value.trim(),nm=$("#nm");
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m)){nm.style.color="#ff7a8a";nm.textContent="Please enter a valid email.";return}
+ try{const r=await post("newsletter",{email:m});if(!r.ok)throw 0;nm.style.color="#2BFF9A";nm.textContent="Subscribed. Thank you!";e.target.reset()}catch{nm.style.color="#ff7a8a";nm.textContent="Could not subscribe right now. Try again later."}};
+</script>
+</body>
+</html>
