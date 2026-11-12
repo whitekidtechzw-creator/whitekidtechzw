@@ -1,0 +1,79 @@
+name: Build APK
+on: { push: { branches: [main] }, workflow_dispatch: {} }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore folder layout
+        run: |
+          for f in $(find . -maxdepth 1 -type f -name '*[_][_]*' -printf '%f\n'); do
+            t=$(echo "$f" | sed 's/[_][_]/\//g')
+            mkdir -p "$(dirname "$t")"
+            mv "$f" "$t"
+          done
+      - uses: actions/setup-go@v5
+        with: { go-version: "1.22" }
+      - name: Build SlowDNS engine (dnstt-client)
+        continue-on-error: true
+        run: |
+          set -e
+          OUT="$GITHUB_WORKSPACE/app/src/main/jniLibs"
+          mkdir -p "$OUT/arm64-v8a" "$OUT/armeabi-v7a"
+          build_from_clone() {
+            ( cd /tmp/dnstt/dnstt-client &&
+              CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -ldflags "-s -w" -o "$OUT/arm64-v8a/libdnstt.so" . &&
+              CGO_ENABLED=0 GOOS=linux GOARCH=arm GOARM=7 go build -ldflags "-s -w" -o "$OUT/armeabi-v7a/libdnstt.so" . )
+          }
+          if git clone --depth 1 https://www.bamsoftware.com/git/dnstt.git /tmp/dnstt && build_from_clone; then
+            echo "Built dnstt from the official repository"
+          else
+            echo "Clone failed, trying the Go module proxy"
+            mkdir -p /tmp/dm && cd /tmp/dm && go mod init dm && go get www.bamsoftware.com/git/dnstt.git/dnstt-client@latest
+            CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -ldflags "-s -w" -o "$OUT/arm64-v8a/libdnstt.so" www.bamsoftware.com/git/dnstt.git/dnstt-client
+            CGO_ENABLED=0 GOOS=linux GOARCH=arm GOARM=7 go build -ldflags "-s -w" -o "$OUT/armeabi-v7a/libdnstt.so" www.bamsoftware.com/git/dnstt.git/dnstt-client
+          fi
+          ls -la "$OUT"/*/
+      - name: Check SlowDNS engine
+        run: |
+          if [ -s app/src/main/jniLibs/arm64-v8a/libdnstt.so ]; then echo "SlowDNS engine OK"
+          else echo "::warning title=SlowDNS::The SlowDNS engine was NOT built, so SlowDNS will not work in this APK."; fi
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: 17 }
+      - name: Download Xray core (libv2ray.aar)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh release download -R 2dust/AndroidLibXrayLite -p libv2ray.aar -D app/libs --clobber
+      - uses: gradle/actions/setup-gradle@v4
+        with: { gradle-version: "8.9" }
+      - name: Prepare signing key
+        env:
+          KS_B64: ${{ secrets.WK_KEYSTORE_B64 }}
+        run: |
+          if [ -n "$KS_B64" ]; then
+            echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/wk.jks"
+            echo "WK_KEYSTORE=$RUNNER_TEMP/wk.jks" >> "$GITHUB_ENV"
+            echo "Using the Whitekid release key"
+          else
+            echo "No signing secrets found: using the debug key"
+          fi
+      - name: Build APK
+        env:
+          WK_STORE_PASS: ${{ secrets.WK_STORE_PASS }}
+          WK_KEY_ALIAS: ${{ secrets.WK_KEY_ALIAS }}
+          WK_KEY_PASS: ${{ secrets.WK_KEY_PASS }}
+          WK_SLOWDNS_NS: ${{ secrets.WK_SLOWDNS_NS }}
+          WK_SLOWDNS_KEY: ${{ secrets.WK_SLOWDNS_KEY }}
+          WK_SLOWDNS_USER: ${{ secrets.WK_SLOWDNS_USER }}
+          WK_SLOWDNS_PASS: ${{ secrets.WK_SLOWDNS_PASS }}
+          WK_SSL_SERVERS_B64: ${{ secrets.WK_SSL_SERVERS_B64 }}
+        run: |
+          set +e
+          gradle assembleRelease --console=plain > build.log 2>&1
+          code=$?
+          grep -E '^e: ' build.log | head -25 | while read -r l; do echo "::error::$l"; done
+          grep -E 'What went wrong' -A4 build.log | head -12 | while read -r l; do echo "::error::$l"; done
+          exit $code
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Whitekid-VPN-apk
+          path: app/build/outputs/apk/release/*.apk
